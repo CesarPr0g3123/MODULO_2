@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Bem vindo ao Colaço</title>
+        <br>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: beige;
+            color: #333;
+        }
+    
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            background-color: rgb(214, 246, 203);
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .logo img {
+            max-height: 60px;
+        }
+
+        .nav-bar {
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-bar a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            color: #007bff;
+        }
+
+        /* Estilos para centralizar o carrossel */
+        .carrossel-container {
+            width: 100%;
+            max-width: 800px; /* Largura máxima do carrossel */
+            margin: 30px auto; /* Centraliza horizontalmente */
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .carrossel {
+            display: flex;
+            width: 400%; /* 4 imagens = 400% */
+            animation: slide 20s infinite;
+        }
+
+        .carrossel-item {
+            width: 25%; /* Cada item ocupa 25% do container (100%/4) */
+            flex-shrink: 0;
+        }
+
+        .carrossel-item img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            display: block;
+        }
+
+        @keyframes slide {
+            0% { transform: translateX(0%); }
+            20% { transform: translateX(0%); }
+            
+            25% { transform: translateX(-25%); }
+            45% { transform: translateX(-25%); }
+            
+            50% { transform: translateX(-50%); }
+            70% { transform: translateX(-50%); }
+            
+            75% { transform: translateX(-75%); }
+            95% { transform: translateX(-75%); }
+            
+            100% { transform: translateX(0%); }
+        }
+
+        footer {
+            background-color: rgb(214, 246, 203);
+            color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        /* Estilos responsivos */
+        @media (max-width: 768px) {
+            .menu {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            .carrossel-container {
+                margin: 20px 15px;
+            }
+            
+            .carrossel-item img {
+                height: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="logo"> 
+            <img src="images/Logo-colaço.png" alt="logo-do-colaço">
+        </div>
+         <div class="nav-bar">
+            <a href="/index.html">Home</a>
+            <a href="/Sobre.html">Sobre</a>
+            <a href="/Contato.html">Contato</a>
+         </div>
+    </div>
+    <div class="carrossel-container">
+        <div class="carrossel">
+            <div class="carrossel-item">
+                <img src="https://newsoeste.com/imagens/img3411.jpg" alt="home-colaço">
+            </div>
+            <div class="carrossel-item">
+                <img src="https://static.wixstatic.com/media/085ac3_6484558b869a4912980f368dd796fd14~mv2.jpg/v1/fill/w_640,h_400,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/085ac3_6484558b869a4912980f368dd796fd14~mv2.jpg" alt="home-colaço">
+            </div>
+            <div class="carrossel-item">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyjPFpW-0dJg9kfLeeT9LfzKBFc1HcIQwq9g&s" alt="home-colaço">
+            </div>
+            <div class="carrossel-item">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Col%C3%A9gio_Municipal_Tenente_General_Gaspar_Godoi_Cola%C3%A7o_01.jpg" alt="home-colaço">
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <footer>
+        <strong>
+            <p>© 2025 Colégio Colaço - Todos os direitos reservados ao Colaço</p>
+        </strong>
+    </footer>
+</body>
+</html>
